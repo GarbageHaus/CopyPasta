@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="CopyPasta"
+config/description="A tool for copy and pasting when you need to copy and paste multiple items."
+config/version="1.0"
+run/main_scene="uid://b4uph4yh6as31"
+config/features=PackedStringArray("4.6", "Forward Plus")
+boot_splash/bg_color=Color(0.2851873, 0.02427402, 6.016344e-08, 1)
+boot_splash/image="uid://dbgblbpljksvk"
+config/icon="uid://dbgblbpljksvk"
+
+[display]
+
+window/size/viewport_width=280
+window/size/viewport_height=280
+window/size/resizable=false
+window/size/always_on_top=true
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"

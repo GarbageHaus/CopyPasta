@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://b4uph4yh6as31"]
+
+[ext_resource type="Script" uid="uid://bw6enn6slt3e1" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://dbgblbpljksvk" path="res://logo.png" id="2_0xm2m"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_h2yge"]
+font_size = 10
+
+[node name="Main" type="Node2D" unique_id=1527218347 node_paths=PackedStringArray("set_1", "set_2", "set_3", "set_4", "set_5")]
+script = ExtResource("1_ig7tw")
+set_1 = NodePath("FlowContainer/VBoxContainer2/HBoxContainer")
+set_2 = NodePath("FlowContainer/VBoxContainer2/HBoxContainer2")
+set_3 = NodePath("FlowContainer/VBoxContainer2/HBoxContainer3")
+set_4 = NodePath("FlowContainer/VBoxContainer2/HBoxContainer4")
+set_5 = NodePath("FlowContainer/VBoxContainer2/HBoxContainer5")
+
+[node name="FlowContainer" type="Control" parent="." unique_id=62488173]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 280.0
+offset_bottom = 280.0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="FlowContainer" unique_id=2062687130]
+layout_mode = 0
+offset_right = 277.0
+offset_bottom = 281.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="FlowContainer/VBoxContainer2" unique_id=327927783]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="FlowContainer/VBoxContainer2/HBoxContainer" unique_id=2265364]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "To Paste"
+
+[node name="1" type="Button" parent="FlowContainer/VBoxContainer2/HBoxContainer" unique_id=1864661005]
+layout_mode = 2
+text = "Copy"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="FlowContainer/VBoxContainer2" unique_id=870036251]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="FlowContainer/VBoxContainer2/HBoxContainer2" unique_id=1512674411]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "To Paste"
+
+[node name="2" type="Button" parent="FlowContainer/VBoxContainer2/HBoxContainer2" unique_id=831417612]
+layout_mode = 2
+text = "Copy"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="FlowContainer/VBoxContainer2" unique_id=561497276]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="FlowContainer/VBoxContainer2/HBoxContainer3" unique_id=1541688299]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "To Paste"
+
+[node name="3" type="Button" parent="FlowContainer/VBoxContainer2/HBoxContainer3" unique_id=1086808783]
+layout_mode = 2
+text = "Copy"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="FlowContainer/VBoxContainer2" unique_id=2001028583]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="FlowContainer/VBoxContainer2/HBoxContainer4" unique_id=785484227]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "To Paste"
+
+[node name="4" type="Button" parent="FlowContainer/VBoxContainer2/HBoxContainer4" unique_id=1184063699]
+layout_mode = 2
+text = "Copy"
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="FlowContainer/VBoxContainer2" unique_id=300408323]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="FlowContainer/VBoxContainer2/HBoxContainer5" unique_id=1863308673]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "To Paste"
+
+[node name="5" type="Button" parent="FlowContainer/VBoxContainer2/HBoxContainer5" unique_id=186145296]
+layout_mode = 2
+text = "Copy"
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="FlowContainer/VBoxContainer2" unique_id=1868934021]
+layout_mode = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="FlowContainer/VBoxContainer2/HBoxContainer6" unique_id=367238638]
+layout_mode = 2
+texture = ExtResource("2_0xm2m")
+
+[node name="HBoxContainer7" type="HBoxContainer" parent="FlowContainer/VBoxContainer2" unique_id=61918298]
+layout_mode = 2
+alignment = 2
+
+[node name="Label" type="Label" parent="FlowContainer/VBoxContainer2/HBoxContainer7" unique_id=533325122]
+layout_mode = 2
+text = "v1.0"
+label_settings = SubResource("LabelSettings_h2yge")
+
+[connection signal="pressed" from="FlowContainer/VBoxContainer2/HBoxContainer/1" to="." method="_on_1_pressed"]
+[connection signal="pressed" from="FlowContainer/VBoxContainer2/HBoxContainer2/2" to="." method="_on_2_pressed"]
+[connection signal="pressed" from="FlowContainer/VBoxContainer2/HBoxContainer3/3" to="." method="_on_3_pressed"]
+[connection signal="pressed" from="FlowContainer/VBoxContainer2/HBoxContainer4/4" to="." method="_on_4_pressed"]
+[connection signal="pressed" from="FlowContainer/VBoxContainer2/HBoxContainer5/5" to="." method="_on_5_pressed"]
